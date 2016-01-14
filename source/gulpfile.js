@@ -15,7 +15,7 @@ gulp.task('copy', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(['*.html'], ['cp']);
+    gulp.watch(['*.html'], ['copy']);
     gulp.watch(['styles/*.scss'], ['sass']);
 });
 
