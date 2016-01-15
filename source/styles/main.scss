@@ -62,3 +62,21 @@ a, a:hover {
   display: flex;
   flex-direction: column;
 }
+
+.sidebar {
+  display: none;
+  width: 300px;
+  background-color: $primary-color;
+}
+
+@media (min-width: 800px) {
+  .app-wrap {
+    flex-direction: row;
+  }
+  .app-header, .app-footer {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+  }
+}

@@ -76,3 +76,20 @@ a, a:hover {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.sidebar {
+  display: none;
+  width: 300px;
+  background-color: #00BCD4; }
+
+@media (min-width: 800px) {
+  .app-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .app-header, .app-footer {
+    display: none; }
+  .sidebar {
+    display: block; } }
